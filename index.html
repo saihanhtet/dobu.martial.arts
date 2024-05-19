@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoBu Martial Arts</title>
+
+    <!-- fonts online -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <!-- responsive navbar with toggler -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">DoBu Martial Arts</a>
+            <button class="navbar-toggler border-0 outline-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarDobu" aria-controls="navbarDobu" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarDobu">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/classes.html">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Membership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Facilites</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#dashboard">Dashboard</a>
+                    </li>
+                </ul>
+                <div class="btn-group">
+                    <!-- login btn and register btn -->
+                    <button class="btn custom-btn"><a href="/auth/register.html"><span>Sign Up</span></a> </button>
+                    <button class="btn custom-btn"><a href="/auth/login.html"><span>Sign In</span></a> </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- main components -->
+    <main class="wrapper container">
+        <!-- main banner -->
+        <section id="home-section" class="section">
+            <div class="content">
+                <div class="title">
+                    <span class="d-block">Welcome From</span>
+                    <span class="blue-color">DoBu Martial <span class="red-color">Arts</span></span>
+                </div>
+                <div class="subtitle fw-bold lighter-color">
+                    World best Martial Arts Training Gym
+                </div>
+                <div class="description">Welcome to DoBu Martial Arts, where passion meets discipline, and strength
+                    meets technique. We are thrilled to have you explore our state-of-the-art martial arts gym,
+                    designed to provide you with the ultimate training experience.</div>
+                <div class="scroll-box">
+                    <a class="main_scroll" href="#">
+                        <div class="main_scroll-box">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M11.9997 13.1716L7.04996     8.22186L5.63574 9.63607L11.9997 16L18.3637 9.63607L16.9495 8.22186L11.9997 13.1716Z"
+                                    fill="rgba(28,28,30,1)">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="main_scroll-text text-muted fw-bold">Scroll</span>
+                    </a>
+                </div>
+            </div>
+            </div>
+            <div class="image-box d-none d-md-block d-xl-block d-lg-block red-bg">
+                <img src="media/cover.jpg" alt="cover">
+            </div>
+        </section>
+        <!-- member plans -->
+        <section id="plan-section" class="section flex-column">
+            <div class="title">
+                <span>Our</span>
+                <span class="blue-color">Plans</span>
+            </div>
+            <div class="d-flex justify-content-center align-items-center plan-content"
+                style="gap:40px; flex-wrap: wrap;">
+                <a href="#basic" class="circle d-flex justify-content-center align-items-center shadow-md">
+                    Basic
+                </a>
+                <a href="#intermediate" class="circle d-flex justify-content-center align-items-center shadow-md">
+                    Intermediate
+                </a>
+                <a href="#advance" class="circle d-flex justify-content-center align-items-center shadow-md">
+                    Advanced
+                </a>
+                <a href="#elite" class="circle d-flex justify-content-center align-items-center shadow-md">
+                    Elite
+                </a>
+            </div>
+        </section>
+        <!-- instructors plans -->
+        <section id="instructors-section" class="section flex-column">
+            <div class="title">
+                <span>Meet Our</span>
+                <span class="blue-color">Instructors</span>
+            </div>
+            <div class="container row instructors-list row-gap-3">
+                <div class="col-12 col-md-4">
+                    <div class="card w-100">
+                        <div class="card-image overflow-hidden">
+                            <!-- <svg viewBox="0 0 16 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true" class="w-10 h-10 text-gray-200 dark:text-gray-600">
+                                <path
+                                    d="M14.066 0H7v5a2 2 0 0 1-2 2H0v11a1.97 1.97 0 0 0 1.934 2h12.132A1.97 1.97 0 0 0 16 18V2a1.97 1.97 0 0 0-1.934-2ZM10.5 6a1.5 1.5 0 1 1 0 2.999A1.5 1.5 0 0 1 10.5 6Zm2.221 10.515a1 1 0 0 1-.858.485h-8a1 1 0 0 1-.9-1.43L5.6 10.039a.978.978 0 0 1 .936-.57 1 1 0 0 1 .9.632l1.181 2.981.541-1a.945.945 0 0 1 .883-.522 1 1 0 0 1 .879.529l1.832 3.438a1 1 0 0 1-.031.988Z">
+                                </path>
+                                <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.98 2.98 0 0 0 .13 5H5Z">
+                                </path>
+                            </svg> -->
+                            <img src="/media/cover.jpg" alt="card-image">
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="card-body p-0">
+                                <h3 class="blue-color fw-bold fs-5">Sarah Nova</h3>
+                                <div class="subtitle fw-bold text-capitalize text-muted">Assistant
+                                    martial arts
+                                    coach</div>
+                                <p class="text-wrap">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                                    voluptatum expedita perferendis
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn custom-btn"><a href="#"><span>Contact Us</span></a> </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card w-100">
+                        <div class="card-image overflow-hidden">
+                            <svg viewBox="0 0 16 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true" class="w-10 h-10 text-gray-200 dark:text-gray-600">
+                                <path
+                                    d="M14.066 0H7v5a2 2 0 0 1-2 2H0v11a1.97 1.97 0 0 0 1.934 2h12.132A1.97 1.97 0 0 0 16 18V2a1.97 1.97 0 0 0-1.934-2ZM10.5 6a1.5 1.5 0 1 1 0 2.999A1.5 1.5 0 0 1 10.5 6Zm2.221 10.515a1 1 0 0 1-.858.485h-8a1 1 0 0 1-.9-1.43L5.6 10.039a.978.978 0 0 1 .936-.57 1 1 0 0 1 .9.632l1.181 2.981.541-1a.945.945 0 0 1 .883-.522 1 1 0 0 1 .879.529l1.832 3.438a1 1 0 0 1-.031.988Z">
+                                </path>
+                                <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.98 2.98 0 0 0 .13 5H5Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="card-body p-0 m-0">
+                            <h3 class="blue-color fw-bold fs-5">Mauricio Gomez</h3>
+                            <div class="subtitle lighter-color fw-bold text-capitalize">Gym owner / head martial
+                                arts coach</div>
+                            <p class="text-wrap">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                                voluptatum expedita perferendis
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn custom-btn"><a href="#"><span>Contact Us</span></a> </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card w-100">
+                        <div class="card-image overflow-hidden">
+                            <svg viewBox="0 0 16 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true" class="w-10 h-10 text-gray-200 dark:text-gray-600">
+                                <path
+                                    d="M14.066 0H7v5a2 2 0 0 1-2 2H0v11a1.97 1.97 0 0 0 1.934 2h12.132A1.97 1.97 0 0 0 16 18V2a1.97 1.97 0 0 0-1.934-2ZM10.5 6a1.5 1.5 0 1 1 0 2.999A1.5 1.5 0 0 1 10.5 6Zm2.221 10.515a1 1 0 0 1-.858.485h-8a1 1 0 0 1-.9-1.43L5.6 10.039a.978.978 0 0 1 .936-.57 1 1 0 0 1 .9.632l1.181 2.981.541-1a.945.945 0 0 1 .883-.522 1 1 0 0 1 .879.529l1.832 3.438a1 1 0 0 1-.031.988Z">
+                                </path>
+                                <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.98 2.98 0 0 0 .13 5H5Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="card-body p-0">
+                            <h3 class="blue-color fw-bold fs-5">Traci Santiago</h3>
+                            <div class="subtitle lighter-color fw-bold text-capitalize">Fitness coach</div>
+                            <p class="text-wrap">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                                voluptatum expedita perferendis
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn custom-btn"><a href="#"><span>Contact Us</span></a> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonials of members -->
+        <section id="testimonials-section" class="section flex-column">
+            <div class="title d-flex align-items-center justify-content-center gap-0">
+                <span class="red-color">Testimonials&nbsp;</span>
+                <span>of our</span>
+                <span class="blue-color">&nbsp;Members</span>
+            </div>
+            <div class="container row row-gap-3 col-gap-3">
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                    <div
+                        class="card d-flex flex-row flex-wrap flex-md-nowrap flex-lg-nowrap flex-xl-nowrap gap-3 justify-content-center align-items-center p-2 up-box">
+                        <div class="left">
+                            <img src="media/person1.png" alt="profile" width="100">
+                        </div>
+                        <div class="right" style="font-style: italic;">
+                            "Joining DoBu Martial Arts has been a life-changing experience for me. The instructors
+                            are incredibly knowledgeable and supportive, helping me push my limits and achieve goals
+                            I never thought possible. The community here is welcoming and motivating, making every
+                            class something to look forward to." <b>John D.</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                    <div
+                        class="card d-flex flex-row flex-wrap flex-md-nowrap flex-lg-nowrap flex-xl-nowrap gap-3 justify-content-center align-items-center p-2 up-box">
+                        <div class="left">
+                            <img src="media/person2.png" alt="profile" width="100">
+                        </div>
+                        <div class="right" style="font-style: italic;">
+                            "I've tried many gyms, but DoBu Martial Arts stands out for its exceptional training
+                            programs and top-notch facilities. The variety of classes, from martial arts to fitness
+                            training, keeps me engaged and challenged. The sauna and steam room are perfect for
+                            unwinding after a tough workout." <b>Emily S.</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                    <div
+                        class="card d-flex flex-row flex-wrap flex-md-nowrap flex-lg-nowrap flex-xl-nowrap gap-3 justify-content-center align-items-center p-2 up-box">
+                        <div class="left">
+                            <img src="media/person3.png" alt="profile" width="100">
+                        </div>
+                        <div class="right" style="font-style: italic;">
+                            "The facilities at DoBu Martial Arts are second to none, and the range of classes offered is
+                            impressive. I've gained so much from the martial arts and self-defense courses, both
+                            physically and mentally. The instructors are passionate and experienced, creating an
+                            environment where everyone can thrive." <b>David H.</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                    <div
+                        class="card d-flex flex-row flex-wrap flex-md-nowrap flex-lg-nowrap flex-xl-nowrap gap-3 justify-content-center align-items-center p-2 up-box">
+                        <div class="left">
+                            <img src="media/person4.png" alt="profile" width="100">
+                        </div>
+                        <div class="right" style="font-style: italic;">
+                            "I can't say enough good things about DoBu Martial Arts. The large, matted martial arts area
+                            is perfect for practicing techniques safely, and the fully-equipped gym has everything I
+                            need for strength training. The atmosphere is positive and inclusive, making it easy to stay
+                            motivated and committed." <b>Sarah R.</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="footer-logo"></div>
+                <div class="contact-icons"></div>
+            </div>
+            <div class="col-12 col-md-2">
+                <ul class="list-unstyled">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2">
+                <ul class="list-unstyled">
+                    <li><a href="">Classes</a></li>
+                    <li><a href="">Specialist Classes</a></li>
+                    <li><a href="">Schedule</a></li>
+                    <li><a href="">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2">
+                <ul class="list-unstyled">
+                    <li><a href="">Dashoard</a></li>
+                    <li><a href="">Instructors</a></li>
+                    <li><a href="">Sign In</a></li>
+                    <li><a href="">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="d-block text-muted text-center fw-bold fs-6 text-lower">2024@copyright all right served to Sai
+            Han Htet</p>
+    </footer>
+
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/scripts.js"></script>
+</body>
+
+</html>
