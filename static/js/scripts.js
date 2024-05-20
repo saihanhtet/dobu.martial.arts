@@ -94,6 +94,12 @@ $(document).ready(function () {
 
   $("#scrollToSectionBtn").on("click", function () {
     currentSectionIndex = (currentSectionIndex + 1) % sections.length;
+    // check if the current is the last section
+    if (currentSectionIndex == sections.length - 1) {
+      $(".scroll-icon").addClass("rotate-oppsite");
+    } else {
+      $(".scroll-icon").removeClass("rotate-oppsite");
+    }
     // replace the scroll box into welcome section
     if (currentSectionIndex == 0) {
       $(".scroll-box").removeClass("move");
