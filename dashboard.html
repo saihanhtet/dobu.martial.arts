@@ -65,10 +65,97 @@
     <!-- main components -->
     <main class="wrapper container">
         <!-- dashboard section -->
-        <section id="dashboard-section pt-2" class="section flex-column">
+        <section id="dashboard-section pt-2" class="section flex-column justify-content-start align-items-start gap-0">
             <div class="title text-start justify-content-start w-100 mt-5">
                 <span>Welcome Back,&nbsp;</span>
                 <span class="red-color" id="usernameShown"></span>
+            </div>
+            <div class="subtitle text-muted fw-bold text-start">Good day, Welcome from DoBu Member management</div>
+
+            <div class="container p-0 mt-5">
+                <p>Your membership level is:&nbsp;<b>Basic</b></p>
+                <div class="card up-box p-2">
+                    <b>Currently, you have enrolled in these classes.</b>
+                    <ol id="enrolled-classes-list" class="mt-2">
+                        <li>Juji-tsu</li>
+                    </ol>
+                </div>
+                <!-- spliter -->
+                <hr class="my-4" />
+                <!-- form controls -->
+                <div class="card up-box p-2">
+                    <form id="enroll-class-form">
+                        <div class="form-group my-2">
+                            <label for="enroll-class-selected"><b>Select class to enroll:</b></label>
+                            <div class="d-flex gap-2 mb-2">
+                                <select class="form-select w-full" name="enroll-class-selected"
+                                    aria-label="Enroll new class select option">
+                                    <option selected>Select the class</option>
+                                    <option value="1">Juji-tsu</option>
+                                    <option value="2">Judo</option>
+                                    <option value="3">Karate</option>
+                                    <option value="4">Muay Thai</option>
+                                    <option value="5">Kids Jujitsu</option>
+                                    <option value="6">Kids Judo</option>
+                                    <option value="7">Kids Karate</option>
+                                    <option value="8">Private Tuitions</option>
+                                    <option value="9">Open Mat</option>
+                                    <option value="10">Personal Practice</option>
+                                    <hr>
+                                    <option value="11">Six-week beginners' self-defence course</option>
+                                    <option value="12">Use of fitness room - per visit</option>
+                                    <option value="13">Personal fitness training - per hour</option>
+                                </select>
+                                <button class="btn btn-primary" type="submit" style="width: 130px;">Enroll</button>
+                            </div>
+                        </div>
+                    </form>
+                    <form id="unroll-class-form">
+                        <div class="form-group my-2">
+                            <label for="unroll-class-selected"><b>Select class to unroll:</b></label>
+                            <div class="d-flex gap-2 mt-2">
+                                <select class="form-select w-full" name="unroll-class-selected"
+                                    aria-label="Unroll the enrolled class select option">
+                                    <option selected>Select the class</option>
+                                    <option value="jiu-jitsu">Juji-tsu</option>
+                                    <option value="judo">Judo</option>
+                                    <option value="karate">Karate</option>
+                                    <option value="muay-thai">Muay Thai</option>
+                                    <option value="kids-jujitsu">Kids Jujitsu</option>
+                                    <option value="kids-judo">Kids Judo</option>
+                                    <option value="kids-karate">Kids Karate</option>
+                                    <option value="open-mat">Open Mat</option>
+                                    <option value="personal-practice">Personal Practice</option>
+                                    <hr>
+                                    <option value="self-denfence">Six-week beginners' self-defence course</option>
+                                    <option value="fitness-room">Use of fitness room - per visit</option>
+                                    <option value="fitness-traning">Personal fitness training - per hour</option>
+                                </select>
+                                <button class="btn btn-danger" style="width: 130px;">Unroll</button>
+                            </div>
+                        </div>
+                    </form>
+                    <form id="change-membership-form">
+                        <div class="form-group my-2">
+                            <label for="membership-selected"><b>Change your membership:</b></label>
+                            <div class="d-flex gap-2 mt-2">
+                                <select class="form-select w-full" name="membership-selected"
+                                    aria-label="Change the current memebership option">
+                                    <option selected>Select the membership</option>
+                                    <option value="basic">Basic - £ 25/month</option>
+                                    <option value="intermediate">Intermediate - £ 35/month</option>
+                                    <option value="advanced">Advanced - £ 45/month</option>
+                                    <option value="elite">Elite - £ 60/month</option>
+                                    <hr>
+                                    <option value="private-tuition">Private Tuition - £ 15/hour</option>
+                                    <option value="junior-membership">Junior Membership - £ 25/month</option>
+                                </select>
+                                <button class="btn btn-warning" style="width: 130px;">Change</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
             </div>
         </section>
     </main>
