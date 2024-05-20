@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="/">DoBu Martial Arts</a>
+        <button class="navbar-toggler border-0 outline-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarDobu" aria-controls="navbarDobu" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarDobu">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/classes.html">Classes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/membership.html">Membership</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/facilites.html">Facilites</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="/dashboard.html">Dashboard</a>
+                </li>
+            </ul>
+            <div class="btn-group" id="auth-btn-group">
+                <!-- login btn and register btn -->
+                <button class="btn custom-btn"><a href="/auth/register.html"><span>Sign Up</span></a> </button>
+                <button class="btn custom-btn"><a href="/auth/login.html"><span>Sign In</span></a> </button>
+            </div>
+            <div class="btn-group hidden" id="logout-btn-group">
+                <button class="btn btn-danger" onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </div>
+</nav>

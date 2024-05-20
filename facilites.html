@@ -13,8 +13,8 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <!-- stylesheets -->
-    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
             <div class="collapse navbar-collapse" id="navbarDobu">
                 <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="/">Home</a>
+                        <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/aboutus.html">About Us</a>
@@ -53,8 +53,7 @@
                 </ul>
                 <div class="btn-group" id="auth-btn-group">
                     <!-- login btn and register btn -->
-                    <button class="btn custom-btn active"><a href="/auth/register.html"><span>Sign Up</span></a>
-                    </button>
+                    <button class="btn custom-btn"><a href="/auth/register.html"><span>Sign Up</span></a> </button>
                     <button class="btn custom-btn"><a href="/auth/login.html"><span>Sign In</span></a> </button>
                 </div>
                 <div class="btn-group hidden" id="logout-btn-group">
@@ -65,49 +64,11 @@
     </nav>
     <!-- main components -->
     <main class="wrapper container">
-        <!-- register sesssion -->
-        <section id="register-session" class="section pt-2 p-0 m-0">
-            <div class="row p-0 py-3" style="width: 100%;">
-                <div class="col-12 col-md-4 col-lg-4 col-xl-4 d-none d-md-block d-lg-block d-xl-block">
-                    <div class="card p-2 border-0" style="height: 100%;width: auto;">
-                        <img src="../media/auth.png" alt="auth image"
-                            style="object-fit: cover; object-position: center;">
-                    </div>
-                </div>
-                <div class="col-12 col-md-8 col-lg-8 col-xl-8">
-                    <div class="title text-start justify-content-start w-100">
-                        <span>Sign</span>
-                        <span class="blue-color">Up</span>
-                    </div>
-                    <div class="subtitle text-muted text-capitalize">Create your account and enroll the new martial arts
-                        courses</div>
-                    <form class="card border-0 mt-3" id="register-form">
-                        <div class="mb-3">
-                            <label for="InputName" class="form-label">Enter Name</label>
-                            <input type="text" class="form-control" id="InputName" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="InputEmail" class="form-label">Enter Email address</label>
-                            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp"
-                                required>
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="InputPassword" class="form-label">Enter Password</label>
-                            <input type="password" class="form-control" id="InputPassword" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="InputPassword2" class="form-label">Enter Password Again</label>
-                            <input type="password" class="form-control" id="InputPassword2" required>
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="rememberCheck">
-                            <label class="form-check-label" for="rememberCheck">Remember me</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Sign Up</button>
-                    </form>
-                </div>
-
+        <!-- dashboard section -->
+        <section id="dashboard-section pt-2" class="section flex-column">
+            <div class="title text-start justify-content-start w-100 mt-5">
+                <span>Our</span>
+                <span class="red-color">&nbsp;Facilites</span>
             </div>
         </section>
     </main>
@@ -120,32 +81,32 @@
             </div>
             <div class="col-12 col-md-2">
                 <ul class="list-unstyled">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Testimonials</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/aboutus.html">About Us</a></li>
+                    <li><a href="/contact-us.html">Contact Us</a></li>
+                    <li><a href="/index.html#testimonials">Testimonials</a></li>
                 </ul>
             </div>
             <div class="col-12 col-md-2">
                 <ul class="list-unstyled">
-                    <li><a href="">Classes</a></li>
+                    <li><a href="/classes.html">Classes</a></li>
                     <li><a href="">Specialist Classes</a></li>
                     <li><a href="">Schedule</a></li>
-                    <li><a href="">Gallery</a></li>
+                    <li><a href="/gallery.html">Gallery</a></li>
                 </ul>
             </div>
             <div class="col-12 col-md-2">
                 <ul class="list-unstyled">
-                    <li><a href="">Dashoard</a></li>
-                    <li><a href="">Instructors</a></li>
-                    <li><a href="">Sign In</a></li>
-                    <li><a href="">Sign Up</a></li>
+                    <li><a href="/dashboard.html">Dashoard</a></li>
+                    <li><a href="/aboutus.html">Instructors</a></li>
+                    <li><a href="/auth/login.html">Sign In</a></li>
+                    <li><a href="/auth/register.html">Sign Up</a></li>
                 </ul>
             </div>
         </div>
         <hr>
-        <p class="d-block text-muted text-center fw-bold fs-6 text-lower">2024@copyright all right served to Sai
-            Han Htet</p>
+        <p class="d-block text-muted text-center fw-bold fs-6 text-lower">2024 &copy; All rights reserved to Sai Han
+            Htet</p>
     </footer>
 
     <script src="../static/js/bootstrap.bundle.min.js"></script>
