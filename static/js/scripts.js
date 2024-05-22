@@ -57,18 +57,94 @@ function logout() {
   window.location.href = "../index.html";
 }
 
-$(document).ready(function () {
+function scrollSectionsListener() {
+  // Smooth scroll for links within the same page
+  $('a[href*="#"]')
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function (event) {
+      if (
+        location.pathname.replace(/^\//, "") ==
+          this.pathname.replace(/^\//, "") &&
+        location.hostname == this.hostname
+      ) {
+        var target = $(this.hash);
+        target = target.length
+          ? target
+          : $("[name=" + this.hash.slice(1) + "]");
+        if (target.length) {
+          event.preventDefault();
+          $("html, body").animate(
+            {
+              scrollTop: target.offset().top,
+            },
+            1000,
+            function () {
+              var $target = $(target);
+              $target.focus();
+              if ($target.is(":focus")) {
+                return false;
+              } else {
+                $target.attr("tabindex", "-1");
+                $target.focus();
+              }
+            }
+          );
+        }
+      }
+    });
+
+  // Smooth scroll to the target section if the URL contains a hash on page load
+  if (window.location.hash) {
+    var hash = window.location.hash;
+    var target = $(hash);
+    if (target.length) {
+      $("html, body").animate(
+        {
+          scrollTop: target.offset().top - 100,
+        },
+        1000,
+        function () {
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) {
+            return false;
+          } else {
+            $target.attr("tabindex", "-1");
+            $target.focus();
+          }
+        }
+      );
+    }
+  }
+}
+
+function scrollBoxListener() {}
+
+function CheckUserState() {
   // Check if user data exists in local storage
   var userData = localStorage.getItem("userData");
   if (userData) {
     $(".navbar-nav .nav-item:last-child .nav-link").removeClass("disabled");
+    $("#dashboard-footer-url").removeClass("disabled-link");
     $("#logout-btn-group").removeClass("hidden");
     $("#auth-btn-group").addClass("hidden");
     // Parse user data from localStorage
     var parsedUserData = JSON.parse(userData);
     // Set the username
     $("#usernameShown").html(parsedUserData.name);
+  } else {
+    // disable the dashboard a tags or urls if not login yet
+    $("#dashboard-footer-url").addClass("disabled-link");
   }
+}
+
+$(document).ready(function () {
+  // listen the section click events
+  scrollSectionsListener();
+
+  // check if the user is already login or not
+  CheckUserState();
 
   $("#register-form").on("submit", function (e) {
     e.preventDefault();

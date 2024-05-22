@@ -1,6 +1,10 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
     <div class="container">
-        <a class="navbar-brand" href="/">DoBu Martial Arts</a>
+        <a class="navbar-brand d-flex align-items-center justify-content-center" href="/">
+            <img src="media/logo.png" alt="DoBu Logo" width="80">
+            <span>DoBu&nbsp;</span>
+            <span class="d-none d-md-block d-lg-block d-xl-block">Martial Arts</span>
+        </a>
         <button class="navbar-toggler border-0 outline-none" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarDobu" aria-controls="navbarDobu" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -9,7 +13,7 @@
         <div class="collapse navbar-collapse" id="navbarDobu">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="/index.html">Home</a>
+                    <a class="nav-link active" href="/">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/aboutus.html">About Us</a>
@@ -32,7 +36,7 @@
             </ul>
             <div class="btn-group" id="auth-btn-group">
                 <!-- login btn and register btn -->
-                <button class="btn custom-btn"><a href="/auth/register.html"><span>Sign Up</span></a> </button>
+                <button class="btn custom-btn active"><a href="/auth/register.html"><span>Sign Up</span></a> </button>
                 <button class="btn custom-btn"><a href="/auth/login.html"><span>Sign In</span></a> </button>
             </div>
             <div class="btn-group hidden" id="logout-btn-group">

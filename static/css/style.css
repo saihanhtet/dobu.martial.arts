@@ -211,6 +211,13 @@ a {
   justify-content: center;
   gap: 5px;
 }
+.disabled-link {
+  pointer-events: none;
+  cursor: default;
+  color: gray;
+  text-decoration: dashed;
+}
+
 /* content */
 
 body {
@@ -224,6 +231,7 @@ body {
   background-color: inherit !important;
   font-family: "Inter", sans-serif !important;
   border-bottom: 2px solid var(--color);
+  padding: 0;
 }
 
 .navbar-brand {
@@ -234,8 +242,11 @@ body {
 }
 
 .navbar-nav {
-  font-size: 15px !important;
-  font-weight: 500;
+  font-size: 14px !important;
+  font-family: monospace;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
   color: var(--light-color);
 }
 
