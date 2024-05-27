@@ -140,7 +140,7 @@ a {
   padding: 0;
 }
 
-.custom-btn a {
+.custom-btn .link {
   position: relative;
   display: inline-block;
   padding: 6px;
@@ -154,7 +154,7 @@ a {
   font-size: 20px;
 }
 
-.custom-btn a::before {
+.custom-btn .link::before {
   content: "";
   position: absolute;
   top: 6px;
@@ -166,11 +166,11 @@ a {
   transform: scaleY(1);
 }
 
-.custom-btn a:hover::before {
+.custom-btn .link:hover::before {
   transform: scaleY(0);
 }
 
-.custom-btn a::after {
+.custom-btn .link::after {
   content: "";
   position: absolute;
   left: 6px;
@@ -183,7 +183,7 @@ a {
   transition-delay: 0.5s;
 }
 
-.custom-btn a:hover::after {
+.custom-btn .link:hover::after {
   transform: scaleX(0);
 }
 
@@ -193,7 +193,7 @@ a {
   background-color: transparent !important;
 }
 
-.custom-btn a span {
+.custom-btn .link span {
   position: relative;
   z-index: 3;
 }
@@ -267,7 +267,7 @@ body {
 }
 
 .section .title {
-  font-size: 40px;
+  font-size: 40px !important;
   font-weight: 800;
   font-family: "Inter", sans-serif !important;
   text-shadow: 2px 2px #cccccc;
@@ -275,6 +275,11 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.section .title h1 {
+  font-size: 40px !important;
+  font-weight: 800;
 }
 
 .wrapper {

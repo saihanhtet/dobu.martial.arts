@@ -458,6 +458,7 @@ function checkUserState() {
     // Parse user data from localStorage
     var parsedUserData = JSON.parse(userData);
     // Set the username
+    $(".usernameShown").html("");
     $("#usernameShown").html(parsedUserData.name);
   } else {
     // disable the dashboard a tags or urls if not login yet
