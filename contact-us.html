@@ -78,15 +78,15 @@
             <div class="container row p-0 mt-5 row-gap-5">
                 <form id="contact-us-form" class="col-12 col-lg-6 col-md-6 col-xl-6">
                     <div class="mb-3">
-                        <label for="InputEmail" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp"
-                            placeholder="example@domain.com">
+                        <label for="contact-email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="contact-email" name="contact-email"
+                            aria-describedby="emailHelp" placeholder="example@domain.com">
                         <div id="emailHelp" class="form-text">We'll never share your
                             email with anyone else.</div>
                     </div>
                     <div class="mb-3">
-                        <label for="InputMessage" class="form-label">Message</label>
-                        <textarea class="form-control" id="InputMessage" rows="6"
+                        <label for="contact-message" class="form-label">Message</label>
+                        <textarea class="form-control" id="contact-message" name="contact-message" rows="6"
                             placeholder="Enter your message"></textarea>
                     </div>
                     <button type="submit" class="btn btn-danger" style="width: 100%;">Send Now</button>
@@ -189,6 +189,7 @@
         </div>
     </footer>
 
+    <script src="static/js/email.min.js"></script>
     <script src="static/js/bootstrap.bundle.min.js"></script>
     <script src="static/js/popper.min.js"></script>
     <script src="static/js/jquery.min.js"></script>

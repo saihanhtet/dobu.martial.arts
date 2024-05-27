@@ -77,8 +77,10 @@
             <div class="subtitle text-muted fw-bold text-start">Good day, Welcome from DoBu Member management</div>
 
             <div class="container p-0 mt-5">
-                <p>Your membership level is:&nbsp;<b>Basic</b></p>
                 <div class="card up-box p-2">
+                    <div id="membership-info" class="p-0"></div>
+                </div>
+                <div class="card up-box p-2 mt-4">
                     <b>Currently, you have enrolled in these classes.</b>
                     <ol id="enrolled-classes-list" class="mt-2">
                     </ol>
@@ -92,8 +94,8 @@
                             <label for="enroll-class-selected"><b>Select class to enroll:</b></label>
                             <div class="d-flex gap-2 mb-2">
                                 <select class="form-select w-full" name="enroll-class-selected"
-                                    aria-label="Enroll new class select option">
-                                    <option selected>Select the class</option>
+                                    id="enroll-class-selected" aria-label="Enroll new class select option">
+                                    <!-- <option selected>Select the class</option>
                                     <option value="1">Juji-tsu</option>
                                     <option value="2">Judo</option>
                                     <option value="3">Karate</option>
@@ -107,7 +109,7 @@
                                     <hr>
                                     <option value="11">Six-week beginners' self-defence course</option>
                                     <option value="12">Use of fitness room - per visit</option>
-                                    <option value="13">Personal fitness training - per hour</option>
+                                    <option value="13">Personal fitness training - per hour</option> -->
                                 </select>
                                 <button class="btn btn-primary" type="submit" style="width: 130px;">Enroll</button>
                             </div>
@@ -118,7 +120,7 @@
                             <label for="unroll-class-selected"><b>Select class to unroll:</b></label>
                             <div class="d-flex gap-2 mt-2">
                                 <select class="form-select w-full" name="unroll-class-selected"
-                                    aria-label="Unroll the enrolled class select option">
+                                    aria-label="Unroll the enrolled class select option" id="unroll-class-selected">
                                     <!-- <option value="1">Juji-tsu</option>
                                     <option value="2">Judo</option>
                                     <option value="3">Karate</option>
@@ -138,11 +140,11 @@
                             </div>
                         </div>
                     </form>
-                    <form id="change-membership-form">
+                    <form id="membership-form">
                         <div class="form-group my-2">
                             <label for="membership-selected"><b>Change your membership:</b></label>
                             <div class="d-flex gap-2 mt-2">
-                                <select class="form-select w-full" name="membership-selected"
+                                <select class="form-select w-full" name="membership-selected" id="membership-selected"
                                     aria-label="Change the current memebership option">
                                     <option selected>Select the membership</option>
                                     <option value="basic">Basic - £ 25/month</option>
@@ -228,6 +230,7 @@
         </div>
     </footer>
 
+    <script src="static/js/email.min.js"></script>
     <script src="static/js/bootstrap.bundle.min.js"></script>
     <script src="static/js/popper.min.js"></script>
     <script src="static/js/jquery.min.js"></script>
