@@ -202,7 +202,6 @@ function selectMembershipListener() {
         "selectedMembershipPlan",
         JSON.stringify(selectedPlan)
       );
-      showSelectedMembership();
       renderSelect();
     });
   } catch (error) {
