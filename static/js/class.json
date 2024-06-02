@@ -1,0 +1,17 @@
+{
+  "classes": [
+    { "id": 1, "name": "Juji-tsu" },
+    { "id": 2, "name": "Judo" },
+    { "id": 3, "name": "Karate" },
+    { "id": 4, "name": "Muay Thai" },
+    { "id": 5, "name": "Kids Jujitsu" },
+    { "id": 6, "name": "Kids Judo" },
+    { "id": 7, "name": "Kids Karate" },
+    { "id": 8, "name": "Private Tuitions" },
+    { "id": 9, "name": "Open Mat" },
+    { "id": 10, "name": "Personal Practice" },
+    { "id": 11, "name": "Six-week beginners' self-defence course" },
+    { "id": 12, "name": "Use of fitness room - per visit" },
+    { "id": 13, "name": "Personal fitness training - per hour" }
+  ]
+}
