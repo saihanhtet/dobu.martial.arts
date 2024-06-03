@@ -475,6 +475,17 @@ function navbarState() {
   });
 }
 
+function autoType() {
+  const exampleText = ["DoBu Martial Arts"];
+  const exampleTyping = new AutoTyping("#text-auto-type", exampleText, {
+    typeSpeed: 50,
+    deleteSpeed: 50,
+    waitBeforeDelete: 2000,
+    waitBetweenWords: 500,
+  });
+  exampleTyping.start();
+}
+
 function authEventListeners() {
   // register event listener
   $("#register-form").on("submit", function (e) {
@@ -490,7 +501,7 @@ function authEventListeners() {
 
 $(document).ready(function () {
   onload();
-
+  autoType();
   // State checking
   checkUserState();
   navbarState();
