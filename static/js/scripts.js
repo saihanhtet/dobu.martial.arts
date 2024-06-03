@@ -476,14 +476,18 @@ function navbarState() {
 }
 
 function autoType() {
-  const exampleText = ["DoBu Martial Arts"];
-  const exampleTyping = new AutoTyping("#text-auto-type", exampleText, {
-    typeSpeed: 50,
-    deleteSpeed: 50,
-    waitBeforeDelete: 2000,
-    waitBetweenWords: 500,
-  });
-  exampleTyping.start();
+  try {
+    const exampleText = ["DoBu Martial Arts"];
+    const exampleTyping = new AutoTyping("#text-auto-type", exampleText, {
+      typeSpeed: 50,
+      deleteSpeed: 50,
+      waitBeforeDelete: 2000,
+      waitBetweenWords: 500,
+    });
+    exampleTyping.start();
+  } catch (error) {
+    console.error(error);
+  }
 }
 
 function authEventListeners() {
@@ -506,7 +510,7 @@ $(document).ready(function () {
   checkUserState();
   navbarState();
 
-  // display
+  // dashboard functions
   showEnrolledClass();
   renderSelect();
   renderMembershipPlans();
