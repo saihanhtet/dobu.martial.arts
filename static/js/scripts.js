@@ -101,7 +101,7 @@ function contactFormListener() {
       contactForm.addEventListener("submit", sendEmail);
     }
   } catch (error) {
-    console.error(error);
+    console.log("This is not contact page");
   }
 }
 
@@ -144,7 +144,7 @@ function renderSelect() {
       membershipInfoDiv.innerHTML = "<p>No membership plan selected.</p>";
     }
   } catch (error) {
-    console.error(error);
+    console.log("This is not dashboard page");
   }
 }
 
@@ -161,7 +161,7 @@ function showEnrolledClass() {
       });
     }
   } catch (error) {
-    console.error(error);
+    console.log("This is not dashboard page");
   }
 }
 
@@ -184,7 +184,7 @@ function renderMembershipPlans() {
       membershipSelect.appendChild(newOption);
     });
   } catch (error) {
-    console.error(error);
+    console.log("This is not dashboard page");
   }
 }
 
@@ -205,7 +205,7 @@ function selectMembershipListener() {
       renderSelect();
     });
   } catch (error) {
-    console.error(error);
+    console.log("This is not dashboard page");
   }
 }
 
@@ -279,7 +279,7 @@ function enrollClassListener() {
       enroll(selectedObject);
     });
   } catch (error) {
-    console.error(error);
+    console.log("This is not dashboard page");
   }
 }
 
@@ -299,7 +299,7 @@ function unrollClassListener() {
       unroll(selectedObject);
     });
   } catch (error) {
-    console.error(error);
+    console.log("This is not dashboard page");
   }
 }
 
@@ -486,7 +486,7 @@ function autoType() {
     });
     exampleTyping.start();
   } catch (error) {
-    console.error(error);
+    console.log("This is not home page");
   }
 }
 
